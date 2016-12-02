@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.0_r4" />
+           revision="refs/tags/android-7.1.0_r7" />
 
   <remote  name="github"
            fetch=".." />
@@ -33,15 +33,16 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <!-- <project path="bootable/recovery" name="AOKP/bootable_recovery" groups="pdk" remote="aokp" /> -->
-  <project path="device/qcom/sepolicy" remote="aokp" name="AOKP/device_qcom_sepolicy" />
-  <project path="external/mksh" name="AOKP/external_mksh" groups="pdk" remote="aokp" />
-  <project path="frameworks/base" name="AOKP/frameworks_base" remote="aokp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" remote="aokp" />
-  <project path="packages/apps/Settings" name="AOKP/packages_apps_Settings" remote="aokp" groups="pdk-fs" />
-  <project path="packages/apps/SetupWizard" name="AOKP/packages_apps_SetupWizard" remote="aokp" />
-  <project path="system/core" name="AOKP/system_core" groups="pdk" remote="aokp" />
-  <project path="vendor/aokp" name="AOKP/vendor_aokp" remote="aokp" />
-  <project path="vendor/cmsdk" name="AOKP/cm_platform_sdk" remote="aokp" />
+  <project path="device/qcom/sepolicy" name="AOKP/device_qcom_sepolicy" />
+  <project path="external/mksh" name="AOKP/external_mksh" groups="pdk" />
+  <project path="frameworks/av" name="AOKP/frameworks_av" groups="pdk" />
+  <project path="packages/apps/CMParts" name="AOKP/packages_apps_CMParts" />
+  <project path="frameworks/base" name="AOKP/frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" />
+  <project path="packages/apps/Settings" name="AOKP/packages_apps_Settings" groups="pdk-fs" />
+  <project path="system/core" name="AOKP/system_core" groups="pdk" />
+  <project path="vendor/aokp" name="AOKP/vendor_aokp" />
+  <project path="vendor/cmsdk" name="AOKP/cm_platform_sdk" />
   <!-- end AOKP projects -->
 
   <!-- AOSP Projects -->
@@ -82,7 +83,7 @@
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/apache-commons-math" name="platform/external/apache-commons-math" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/apache-http" name="platform/external/apache-http" groups="pdk" remote="aosp" />
+  <project path="external/apache-http" remote="cm" name="CyanogenMod/android_external_apache-http" groups="pdk" />
   <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" remote="aosp" />
   <project path="external/archive-patcher" name="platform/external/archive-patcher" groups="pdk" remote="aosp" />
   <project path="external/autotest" name="platform/external/autotest" remote="aosp" />
@@ -171,7 +172,7 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" remote="aosp" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" remote="aosp" />
+  <project path="external/jemalloc" remote="cm" name="CyanogenMod/android_external_jemalloc" groups="pdk" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk-fs" remote="aosp" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" remote="aosp" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" remote="aosp" />
@@ -320,7 +321,6 @@
   <project path="external/zlib" remote="cm" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/av" remote="cm" name="CyanogenMod/android_frameworks_av" groups="pdk" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
